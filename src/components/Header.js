@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <Box bg="teal.500" p={4} color="white">
-      <Flex className="container mx-auto" justify="space-between" align="center">
+      <Flex className="mx-auto" justify="space-between" align="center">
         <Heading size="md">
           <Link href="/" passHref>
             <Image src="/assets/FULL_LOGO_WHITE.png" alt="Learning" height="40px" />
@@ -45,7 +45,7 @@ const Header = () => {
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerBody>
+            <DrawerBody className='flex flex-col'>
               <Link href="/" passHref>
                 <Box as="a" my={2} onClick={onClose}>Home</Box>
               </Link>
