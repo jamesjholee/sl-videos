@@ -16,8 +16,8 @@ const VideoPlayer = ({ videoUrl }) => {
   };
 
   return (
-    <div className='flex max-w-2xl mx-auto px-4' >
-      <Box className='min-h-[360px] min-w-[640px] aspect-w-16 aspect-h-9'>
+    <div className='flex xl:flex-row max-w-2xl mx-auto px-4 flex-col' >
+      <Box className='xl:min-h-[360px] xl:min-w-[640px] min-w-[100%] aspect-w-16 aspect-h-9'>
         <ReactPlayer
           className='h-full w-full rounded-lg'
           url={videoUrl}

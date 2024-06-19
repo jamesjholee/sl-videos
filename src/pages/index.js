@@ -35,13 +35,11 @@ const HomePage = () => {
   }
 
   return (
-    <Box>
-      <Grid templateColumns="repeat(auto-fit, minmax(300px, 1fr))" gap={6} p={4}>
-        {state.videos.map((video) => (
-          <VideoCard key={video.id} video={video} />
-        ))}
-      </Grid>
-    </Box>
+    <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={6} p={4}>
+      {state.videos.map((video) => (
+        <VideoCard key={video.id} video={video} />
+      ))}
+    </Grid>
   );
 };
 

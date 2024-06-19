@@ -63,16 +63,6 @@ const VideoPage = () => {
     );
   }
 
-  // if (!state.comments || state.comments.length === 0) {
-  //   return (
-  //     <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
-  //       <Text>No comments available</Text>
-  //     </Box>
-  //   );
-  // }
-
-  console.log(state)
-
   return (
     <Box>
       <VideoPlayer videoUrl={state.video.video_url} />
