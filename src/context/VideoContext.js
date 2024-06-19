@@ -3,9 +3,9 @@ import { createContext, useReducer, useContext } from 'react';
 const VideoContext = createContext();
 
 const videoReducer = (state, action) => {
-  console.log(state, action.payload)
   switch (action.type) {
     case 'SET_VIDEO':
+      console.log(state, action.payload)
       return { ...state, ...action.payload.data };
     case 'SET_VIDEOS':
       return { ...state, ...action.payload };

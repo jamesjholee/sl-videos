@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 import { Box, Button, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Flex, Text } from '@chakra-ui/react';
 
 const VideoPlayer = ({ videoUrl }) => {
-  const [playing, setPlaying] = useState(true);
+  // const [playing, setPlaying] = useState(true);
   const [volume, setVolume] = useState(0.8);
   const [playbackRate, setPlaybackRate] = useState(1);
 

@@ -14,6 +14,7 @@ const VideoPage = () => {
 
   useEffect(() => {
     if (id) {
+      console.log(id)
       const getComments = async () => {
         try {
           const response = await fetchComments(id);
@@ -62,13 +63,15 @@ const VideoPage = () => {
     );
   }
 
-  if (!state.comments || state.comments.length === 0) {
-    return (
-      <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
-        <Text>No comments available</Text>
-      </Box>
-    );
-  }
+  // if (!state.comments || state.comments.length === 0) {
+  //   return (
+  //     <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
+  //       <Text>No comments available</Text>
+  //     </Box>
+  //   );
+  // }
+
+  console.log(state)
 
   return (
     <Box>
